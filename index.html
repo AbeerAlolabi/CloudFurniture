@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+    <title>Cloud Furniture, For Your Conveniences</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Keywords" content="Furniturs">
+    <meta name="Description" content="Furnitures which they are comfortable and soft just like cloud, with lots of modern design which will beautifully decorate any home"/>
+    <link type="text/css" rel="stylesheet" href="css/css.css"/>
+    <script src="jquery-3.4.1.min.js"></script>
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+        a{text-decoration: none; color: inherit;}
+        .navbar{margin-left: 4vw;}
+
+        *{
+            font-family: 'Titillium Web', sans-serif;
+        }
+    
+    </style>
+</head>
+
+<body>
+    
+<header>
+  <div class="top">
+    <img src="image/CLOUD.png" alt="logo" id="cloud"/>
+   
+     <a href='contactUs.html' ><h2>FIND LOCAL STORES</h2>
+     <button class="locationIcon">
+         <img src="image/location.png" alt="locationIcon"/></button></a>
+  </div>
+
+  <!--navbar-->
+ <div class="navbar">
+       <div class="dropdown">
+        <button  class="dropbtn">Home &nbsp;</button>
+         <div class="dropdown-content">
+          <a href="#aboutCompany">Why Cloud Furniture?</a>
+          <a href="#catigory">Shop By Category</a>
+         </div>
+        </div>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="document.location='furniture.html'">Furniture&nbsp;</button>
+         <div class="dropdown-content">
+          <a href="furniture.html#livingRoom">Living Room &emsp;&emsp;&emsp;</a>
+          <a href="furniture.html#diningRoom">Dining Room</a>
+          <a href="furniture.html#bedRoom">Bed Room</a>
+          <a href="furniture.html#homeOffice">Home Office</a>
+         </div>
+       </div>
+       <div class="dropdown">
+        <button class="dropbtn" onclick="document.location='kids.html'">Kids &nbsp;</button>
+         <div class="dropdown-content">
+          <a href="kids.html#kidsBed">Beds &emsp; &emsp; &emsp; &emsp;</a>
+          <a href="kids.html#storage">Storage</a>
+          <a href="kids.html#nursery">Nursery</a>
+          <a href="kids.html#playroom">Playroom</a>
+         </div>
+       </div>
+       <div class="dropdown">
+        <button class="dropbtn" onclick="">Home Decor&nbsp;</button>
+         <div class="dropdown-content">
+          <a href="#">Comming Soon &emsp;&emsp;</a>
+         </div>
+       </div>
+       <div class="dropdown">
+        <button class="dropbtn" onclick="document.location='review.html'">Reviews&nbsp;</button>
+         <div class="dropdown-content">
+          <a href="review.html#review">Reviews our customers opinions &emsp;</a>
+         </div>
+       </div>
+     <div class="dropdown">
+        <button class="dropbtn" onclick="document.location='contactUs.html'">Contact Us &nbsp;</button>
+       </div>
+     <div class="dropdown">
+        <button class="dropbtn" onclick="document.location='Cart.php'">Shopping Cart &nbsp;</button>
+       </div>
+       <div class="dropdown">
+        <button class="dropbtn" href="signUp.html" onclick=" document.getElementById('loginFrame').style.visibility=('visible');">Log In&nbsp;</button>
+        </div>
+   <form action="php/checking.php" id="loginFrame" method="post" >
+      <table onmouseover=" document.getElementById('loginFrame').style.visibility=('visible');" onmouseout="document.getElementById('loginFrame').style.visibility=('hidden');" style="text-align: left;
+  background-color:rgb(250,250,250); color:rgb(200,20,60);float: right;">
+       <tr>
+           <td><label name="email">UserName:</label><br/></td>
+           <td><label name="password">Password:</label><br/></td>
+           <td ><input type="submit" value="submit" id="submit" style="font-size: 0px;visibility: hidden;width: 0px;"></td>
+       </tr>  
+       <tr>
+           <td><input type="email" id="email" size="25px" placeholder="example@example.com" name="email"></td>
+            <td><input type="password" id="password" size="25px" name="password"></td>
+        </tr>
+        <tr><td colspan="2"><a href="signUp.html" style="color: rgb(14,7,68);">Creat Account Now, It’s quick and easy.</a></td>
+        </tr>
+     </table>
+    </form><script>
+        var Enter = document.getElementById("myInput");
+        Enter.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("myBtn").click();
+         }
+        });
+    </script>  
+     </div>
+     
+ <script>document.getElementsByClassName("navbar").style.display="none";
+    </script>
+    <!-- end of navbar-->
+   
+  <h1 class="slides">SHOP KIDS ROOM COLLECTION<br>
+        <span style="font-size:40px;" onmouseover="this.style.color='rgb(200,20,60)';"onmouseout="this.style.color='rgb(14,7,68)';"><a href="kids.html">VISITI IT NOW &gt;&gt;
+            </a></span></h1>
+  <h1 class="slides" style="color:crimson;;background-color:rgba(256,256,256,0.6);">SELL YOU PRODUCTS<br> <span style="font-size:40px;" onmouseout="this.style.color='rgb(200,20,60)';"onmouseover="this.style.color='rgb(14,7,68)';"><a href="signUp.html" >SIGN UP NOW &gt;&gt;
+        </a></span></h1>
+  <h1 class="slides" style="color:#ffffff;background-color:rgba(14,7,68,0.5);">GET NEW HOME DECOR<br/><span style="font-size:40px; "onmouseover="this.style.color='rgb(200,20,60)';"onmouseout="this.style.color='white';"><a href="Cart.php" > SHOP NOW &gt;&gt;</a>
+        </span></h1>
+    <h1 class="slides" style="color:crimson;;background-color:rgba(256,256,256,0.6);">Browse Customers opinion<br> <span style="font-size:40px;" onmouseout="this.style.color='rgb(200,20,60)';"onmouseover="this.style.color='rgb(14,7,68)';"><a href="signUp.html">Browse NOW &gt;&gt;
+        </a></span></h1><br><br><br><br><br>
+ <!--script of the slide show in header -->
+<script>
+    var myIndex = 0;
+     carousel();
+     function carousel() {
+         var i;
+         var x=document.getElementsByClassName('slides');
+         for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+                    }
+         myIndex++;
+         if (myIndex > x.length) {myIndex = 1;}    
+         x[myIndex-1].style.display = "block";  
+         setTimeout(carousel, 3000); // Change image every 2 seconds
+   }
+   </script>    
+</header>
+<!-- end of header -->
+<div id="aboutCompany">
+ <table width=100% cellspacing=20px cellpadding=20% >
+    <caption><h2>Your Best Way To Shop For Furniture.</h2></caption>
+     <tr><td valign="top"><p><b>Online Furniture Shopping Made Easy</b><br/><br/>
+         Looking for a better way to buy furniture online? CloudFurniture.com gathers thousands of quality pieces in one place to make browsing, comparing and coordinating simpler than ever. Our curated collection of sofas, dining tables, bedroom sets, patio furniture, accents and more will connect you with just what you want in a snap</p></td>
+         <td valign="top"><p><b>Affordable Furniture at Your Fingertips</b><br/><br/>
+             With regular furniture sales on stylish pieces, your dream home can finally become a reality. We've done the work of collecting deals from trustworthy vendors so that you can finish your online furniture shopping with just a few clicks. For reliable quality, fair pricing and an extensive selection, CloudFurniture.com offers everything you could ask for, and more.</p></td>
+     </tr>
+     <tr><td valign="top"><p><b>Quality Furniture for the Whole Home</b><br/><br/>
+         Drawing from trusted local retailers, we bring together affordable furniture online to decorate any room. From the office to the living room, our site delivers a one-stop experience. We even provide patio sets and outdoor accessories to furnish the deck or porch at the same time as you update your interior.</p></td>
+         <td valign="top"><p><b>A Range of Brands &amp; Styles</b><br/><br/>
+             We gather a variety of styles from the top names in furniture to help you achieve your design goals. Check out our broad assortment of well-crafted, fashion-forward decor with choices sure to suit your tastes. Shoppers searching for looks from classic to contemporary will find what they want in our diverse online furniture store.</p></td>
+     </tr>
+ </table>
+</div>
+    
+<div id="catigory">
+<table align="center" cellspacing=23px cellpadding=10% width=100%>
+<caption><h2>Shop By Category</h2></caption>
+    
+<tr>
+    <td align="center" ><span class="container" style="width:100%"><a href="furniture.html#livingRoom" title="Quality Furniture for living room"><img class="image" src="image/LivingRoom.jpg" alt="livingRoom"/><br>&nbsp;Living Room Furniture&nbsp;<span class="middle"><span class="text">//explore now&nbsp;//</span></span></a></span></td>
+        
+        
+    <td align="center"><span class="container"><a href="furniture.html#diningRoom" title="Quality Furniture for dining room"><img class="image" src="image/DiningRoom.jpg" alt="diningRoom"/><br>&nbsp;Dining Room&nbsp;<span class="middle"><span class="text">//explore now&nbsp;//</span></span></a></span></td>
+        
+    <td align="center"><span class="container" style="width:100%"><a href="furniture.html#bedRoom" title="Quality Furniture for bedroom"><img class="image" src="image/BedRoom.jpg" alt="bedRoom"/><br>&nbsp;Bedroom Furniture&nbsp;<span class="middle"><span class="text">//explore now&nbsp;//</span></span></a></span></td>
+        
+    <td align="center"><span class="container" style="width:100%"><a href="" title="Quality Furniture for kids room"><img class="image" src="image/kidsRoom1.jpg" alt="kidsRoom"/><br>&nbsp;Kids Furniture&nbsp;<span class="middle"><span class="text">//explore now&nbsp;//</span></span></a></span></td>
+</tr> 
+<tr>
+    <td align="center" ><span class="container" style="width:100%"><a href="furniture.html#homeOffice" title="Quality Furniture for desk"><img class="image" src="image/desk.jpg" alt="desk"/><br>&nbsp;Home Office &nbsp;<span class="middle"><span class="text">//explore now&nbsp;//</span></span></a></span></td>
+        
+        
+    <td align="center"><span class="container"><a href="" title="Quality Furniture for outdoor"><img class="image" src="image/outDoor.jpg" alt="outdoor"/><br>&nbsp;Outdoor Furniture&nbsp;<span class="middle"><span class="text">//Comming Soon&nbsp;//</span></span></a></span></td>
+        
+    <td align="center"><span class="container" style="width:100%"><a href="" title="Quality Furniture for RUGS"><img class="image" src="image/RUGS.jpg" alt="RUGS"/><br>&nbsp;Rugs&nbsp;<span class="middle"><span class="text">//Comming Soon&nbsp;//</span></span></a></span></td>
+        
+    <td align="center"><span class="container" style="width:100%"><a href="" title="Quality Furniture for your home decor"><img class="image" src="image/decor.jpg" alt="decorRoom"/><br>&nbsp;Home Decor&nbsp;<span class="middle"><span class="text">//Comming Soon&nbsp;//</span></span></a></span></td>
+</tr> 
+ </table>    
+</div>
+  <!-- start of footer -->  
+<footer>
+ <div id="contact">
+     <table align="center"  >
+         <tr align="center">
+        <td><a href="contactUs.html"><img src="image/exclaminationMark.png" alt="helpCenter"/>
+            <h4>Need Help? <br/><span>Visit Our Help Center</span></h4></a>
+        </td>
+         <td><a href="contactUs.html"><img src="image/call.png" alt="callUs"/>
+             <h4>Call US <br/><span>+963-991234567</span></h4></a>
+        </td>    
+         <td><a href="contactUs.html"><img src="image/email.png" alt="emailUs"/>
+             <h4>Email Us <br/><span>cloudfurniture@outlook.com</span></h4></a>
+        </td>    
+     </tr></table>
+</div>
+    
+<div id="ConnectWithUs">
+  <table align="center"  >
+    <tr valign="top" >
+      <td >    
+          <a href="#cloud"> <img src="image/CLOUD.png" alt="logo" style="float:left" id="downCloud" /></a>
+        </td>
+        <td id="CenterFooter" ><a href="contactUs.html" title="our headquarter" >
+         <p><img src="image/smallLocation.png" alt="locationIcon" class="smallIcon"/>Al-Abed Street Damascus, Syria</p>
+          <p> <img src="image/smlallCallIcon.png" alt="callIcon" class="smallIcon"/>
+          +963-991234567</p>
+          <p><img src="image/smallEmail.png" alt="emailUs" class="smallIcon"/>cloudfurniture@outlook.com</p></a>
+        </td>
+        <td style="font-size: 1.5vw;padding-left: 2vw">
+           <a href="#aboutCompany" >About Cloud Furniture company</a><br/>
+           <a href="reviews.html" >Reviews</a><BR/>
+           <a href="Cart.php">Order Products</a><BR/>
+           <a href='signUp.html'>Sell Your Products</a><BR/>
+            
+        </td>
+
+    </tr>
+   </table>
+</div>
+    
+</footer>
+    </body>
+   </html>
+    

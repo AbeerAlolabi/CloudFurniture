@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <title>Creat Your Account,</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Keywords" content="Sign up">
+    <meta name="Description" content="Find the closer cloud furniture branch "/>
+    <link type="text/css" rel="stylesheet" href="css/signUp.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <style>body{margin-bottom: 0;}</style>
+</head>
+    
+<body>
+<div id="navbar">
+  <a  href="index.html" >Home &nbsp;</a>
+  <a href="furniture.html">Furniture&nbsp;</a>
+  <a href="kids.html">Kids &nbsp;</a>
+  <a href="search.php">Search&nbsp;</a>
+  <a href="review.html">Reviews&nbsp;</a>
+  <a href="contactUs.html" class="active">Contact Us</a>>
+  <a href="Cart.php" >Shopping Cart</a>
+  <a href="javascript:void(0)" onclick=" document.getElementById('loginFrame').style.visibility=('visible');">Log In&nbsp;</a>
+</div>
+    
+<form action="php/checking.php" id="loginFrame" >
+    <table>
+       <tr>
+           <td><label name="email">UserName:</label><br/></td>
+           <td><label name="Password">Password:</label><br/></td>
+           <td ><input type="submit" value="submit" id="submit" style="font-size: 0px;visibility: hidden;width: 0px;"></td>
+       </tr>
+       <tr>
+           <td><input type="email" id="email" size="18px" placeholder="example@example.com"></td>
+            <td><input type="password" id="password" size="18px"></td>
+        </tr>
+        <tr><td colspan="2"><a href="signUp.html">Creat Account Now, It’s quick and easy.</a></td>
+        </tr>
+     </table>
+</form>
+    <script>
+        var Enter = document.getElementById("myInput");
+        Enter.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("myBtn").click();
+         }
+        });
+    </script>
+    
+<table cellpadding="20px" style="text-align: left;margin-left: 25%">
+    <tr id="damas"><th style="color: rgb(200,20,60)">Damascus </th><td>Al-Abed Street</td><td>+963-9912345632</td></tr>
+    <tr id="homs"><th style="color: rgb(200,20,60)">Homs</th><td>Al-Midan</td><td>+963-312677620</td></tr>
+    <tr id="aleppo"><th style="color: rgb(200,20,60)">Aleppo</th><td>Al-Qudsy Street</td><td>+963-944406207</td></tr>
+    <tr><th id="latakia" style="color: rgb(200,20,60)">Latakia</th><td>Haroun Roundabout</td><td>+963-994442036&emsp;&emsp;</td></tr>
+    <tr><th id="hama" style="color: rgb(200,20,60)">Hama</th><td>comming soon</td><td>&nbsp;---&nbsp;</td></tr>
+    <tr><td colspan="3" ><span style="color: rgb(200,20,60)">Email Us:</span>&emsp;&ensp;&ensp;cloudfurniture@outlook.com</td></tr>
+</table>
+    
+<svg width="100vw" height="4vh" style="margin-top: 10vh">
+  <rect width="100vw" height="5vh" style="fill:rgb(14,7,68);" />
+</svg>
+    </body>
+</html>

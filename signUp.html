@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <title>Creat Your Account,</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Keywords" content="Sign up">
+    <meta name="Description" content="Singing up for cloud furniture it's the easiest way to buy comfortable and  modern furniture"/>
+    <link type="text/css" rel="stylesheet" href="css/signUp.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    </head>
+<body>
+    <div id="navbar">
+  <a  href="index.html" >Home &nbsp;</a>
+  <a href="furniture.html">Furniture&nbsp;</a>
+  <a href="javascript:void(0)">Kids &nbsp;</a>
+  <a href="reviews.html">Review&nbsp;</a>
+  <a href="contactUs.html">Contact Us&nbsp;</a>
+  <a href="Cart.php"  >Shopping Cart &nbsp;</a>
+  <a href="signUp.html"  class="active" >Sign Up &nbsp;</a>
+    </div>
+ <form action="php/insert.php" method="POST" id="register_form">
+  <table>
+    <caption style="border-bottom: none;text-align: center;margin:0px;margin-top: 15px;" ><h1>Create Your Cloud Furniture Account</h1></caption>
+   <tr><td><lable name="fName">First Name:</lable></td>
+       <td><input type="text" id="fName" name="fName" class="input_text" required></td></tr><tr></tr>
+   <tr><td><lable name="lName">Last Name:</lable></td>
+       <td><input type="text" id="lName" name="lName" class="input_text" required></td></tr><tr></tr>
+      <tr><td><lable name="gender">Gender</lable></td>
+       <td><input type="radio" id="gender" name="gender"  value="M" required><span style="font-size:1.7vw ;font-weight: 300;">Male</span><input type="radio" id="gender" name="gender"  value="F" required><span style="font-size:1.7vw;font-weight: 300;">Female</span></td></tr><tr></tr>
+      <tr><td>
+          <label name="city"  required>City:</label></td>
+          <td>      
+            <select id="city" name="city" class="input_text"  required>
+              <option selected>Damascus</option>
+              <option>Homs</option>
+              <option>Aleppo</option>
+              <option>Latakia</option>
+              <option>Hama</option></select></td></tr><tr></tr>
+    <tr><td><lable name="address">Address:</lable></td>
+        <td><input type="text" id="address" name="address"class="input_text" required></td></tr><tr></tr>
+    <tr><td><label name="phone">Phone Number:</label></td>
+        <td><input type="text" class="input_text" id="phone" name="phone"></td></tr><tr></tr>
+    <tr><td><label name="email">Email:</label></td>
+        <td><input type="email" id="email" class="input_text" name="email" required></td></tr><tr></tr>
+    <tr><td><label name="password">Password:</label></td>
+        <td><input type="password" id="password" class="input_text" name="password" required></td></tr><tr></tr>
+    <tr><td><label name="confirm_password">Confirm Password:</label></td>
+        <td><input type="password" id="confirm_password"class="input_text" required></td></tr><tr></tr>
+   
+      <tr ><td ><input type="reset" value="Reset" id="reset"></td>
+          <td><input type="submit" value="Submit" id="submit" name="submit"></td>
+      </tr>
+  </table>   
+ </form>
+<script>
+ var password = document.getElementById("password")
+ var confirm_password = document.getElementById("confirm_password");
+
+ function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+ }
+
+ password.onchange = validatePassword;
+ confirm_password.onkeyup = validatePassword;    
+</script>
+</body>
+</html>
